@@ -8,52 +8,73 @@ Remember to import this module whenever needed.
 import random
 ```
 
-Write a method to simulate the flipping of a biased (binary) coin.
-The method should return a one with probability `p`, and it should return a zero with probability `1-p`.
-The argument `p=0.5` signifies that the default value for parameter `p` is 0.5; still, your method should work for any value between zero and one.
+Part 1: Write a method to simulate the flipping of a fair coin. Let us denote Heads as `1` and Tails as `0`. 
+The method should return `1` with probability `p = 0.5`, and it should return `0` with probability `1-p`.
 
 ```python
-def biasedcoinflip(p=0.5):
+def coinflip(p=0.5):
     # EDIT
     # Create method for biased coin flip
     #
 ```
 
-Create a method that sums `NumberFlips` outcomes of `biasedcoinflip()` and appends the result to list `SumTrials`.
+Flip a fair coin 1000 times, and estimate the empirical probability of Heads.
 
 ```python
-SumTrials = []
-
-for TrialIndex2 in range(0, NumberTrials):
-    # EDIT
-    # Add NumberFlips coin flips for each SumTrials outcome
+    # Estimate empirical probability
+    # You may want to use a `for` loop
     #
 ```
 
-Sum the values of all the elements contained in list `Distribution` and print the result.
+Part 2: Simulation of a `Geometric distribution`: flip a fair coin until a Head occurs. 
+Output the number of trials until first Heads.
 
 ```python
-print repr(Distribution)
-# EDIT
-# Print the sum of the elements in Distribution
-#
+    # Geometric Random Variable:
+    # You may want to use a ‘while’ loop to flip a coin      
+    # until head occurs 
+    #
 ```
 
-Address the following three problems.
+Do this 10000 times, and plot the histogram of `number of trials until first head`. 
 
-1. Describe what happens to the figure as you vary `ParameterP` from zero to one.
-2. What is the sum of the elements in Distribution? 
-3. What is the most likely outcome for `ParameterP = 0.7` and `NumberFlips = 8`?
+```python
+    # For repeating the above process for 10000 times,
+    # you may want to use an outer ‘for’ loop for    
+    # 
+```
 
-Place your answers for 2 and 3 in the appropriate variables at the top of the file. The answers should simply be a number. 
+A template for the entire challege is as follows.
 
+```python
 
+import random
+
+def coinflip(p=0.5):
+    # EDIT
+    # Create method for biased coin flip
+    #
+       
+    #
+    # Estimate empirical probability
+    # You may want to use a `for` loop
+    #
+    
+    # Geometric Random Variable:
+    # You may want to use a ‘while’ loop to flip a coin      
+    # until head occurs 
+    #
+    
+    #
+    # For repeating the above process for 10000 times,
+    # you may want to use an outer ‘for’ loop for    
+    # 
+    
+    # Compute the histogram (possibly using for loops)
+    # Plot the histogram
+```
 
 ## Submission
 
-A template named `1challenge.py` has been placed in your personal folder.
-Edit this template and address the two problems at the end.
-After completing this programming challenge, fill out the self-grading portion.
-Commit your work to our repository using Git and GitHub.
-
-
+Create a folder with your Github id in the `students` folder. Create a new file with name `challenge1.py` in your personal folder.
+After completing this programming challenge, commit your work to our repository using Git and GitHub.

@@ -74,6 +74,8 @@ def coinflip(p=0.5):
     # Plot the histogram
 ```
 
+You may use modules as `matplotlib`, `numpy` to plot the histogram.
+
 ## Submission
 
 Create a folder with your Github id in the `students` folder. Create a new file with name `challenge1.py` in your personal folder.

@@ -1,5 +1,0 @@
-Identity
-
-Name: 
-GitHubID: 
-NetID: 
